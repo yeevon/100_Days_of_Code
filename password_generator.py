@@ -25,8 +25,7 @@ def get_symbols(num):
     return_sym = []
 
     while len(return_sym) < num:
-        rand_num = random.randint(0, len(symbols) - 1)
-        return_sym.append(symbols[rand_num])
+        return_sym.append(random.choice(symbols))
 
     return return_sym
 
@@ -36,8 +35,7 @@ def get_numbers(nums):
     num_list = []
 
     while len(num_list) < nums:
-        rand_num = random.randint(0, 9)
-        num_list.append(str(rand_num))
+        num_list.append(str(random.randint(0, 9)))
 
     return num_list
 
